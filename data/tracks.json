@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Track 1",
+        "file": "audio1.mp3",
+        "image": "25th Volume Pictoreal_page-0001.jpg"
+    },
+    {
+        "title": "Track 2",
+        "file": "audio2.mp3",
+        "image": "25th Volume Pictoreal_page-0002.jpg"
+    },
+    {
+        "title": "Track 3",
+        "file": "audio3.mp3",
+        "image": "25th Volume Pictoreal_page-0003.jpg"
+    },
+    {
+        "title": "Track 4",
+        "file": "audio4.mp3",
+        "image": "25th Volume Pictoreal_page-0004.jpg"
+    }
+]
