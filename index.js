@@ -6,7 +6,7 @@ const PORT = 5000;
 const cors = require('cors');
 
 app.use(cors({
-    origin: "http://localhost:3000",
+    origin: "https://www.pictoreal.in",
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     optionsSuccessStatus: 200,
 }));
