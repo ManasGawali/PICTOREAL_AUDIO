@@ -47,6 +47,11 @@ app.get('/tracks/:id/:lang', (req, res) => {
     }
 });
 
+app.get('/dummy', (req, res) => {
+    res.status(200).json({ message: 'OK' });
+});
+
+
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
