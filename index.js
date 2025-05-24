@@ -5,11 +5,20 @@ const app = express();
 const PORT = 5000;
 const cors = require('cors');
 
+const allowedOrigins = ["https://www.pictoreal.in", "http://localhost:3000"];
+
 app.use(cors({
-    origin: "https://www.pictoreal.in, http://localhost:3000",
+    origin: function (origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error("Not allowed by CORS"));
+        }
+    },
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     optionsSuccessStatus: 200,
 }));
+
 
 // Serve all audio files statically
 app.use('/audio/27/mar', express.static(path.join(__dirname, 'public/audio/mar/V27')));
