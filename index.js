@@ -11,18 +11,36 @@ app.use(cors({
     optionsSuccessStatus: 200,
 }));
 
-app.use('/audio', express.static(path.join(__dirname, 'public/audio')));
+// Serve all audio files statically
+app.use('/audio/27/mar', express.static(path.join(__dirname, 'public/audio/mar/V27')));
+app.use('/audio/27/hin', express.static(path.join(__dirname, 'public/audio/hin/V27')));
+app.use('/audio/27/eng', express.static(path.join(__dirname, 'public/audio/eng/V27')));
+
+// Serve images statically
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 
+app.get('/tracks/:id/:lang', (req, res) => {
+    const { id, lang } = req.params;
 
-app.get('/tracks', (req, res) => {
-    const tracks = JSON.parse(fs.readFileSync(path.join(__dirname, 'data/tracks.json')));
-    res.json(tracks);
+    try {
+        console.log(`Fetching tracks for volume: ${id}, language: ${lang}`);
+        const tracksPath = path.join(__dirname, `data/${lang}tracks.json`);
+        const tracks = JSON.parse(fs.readFileSync(tracksPath));
+
+        const filteredTracks = tracks.filter(track => track.volume === parseInt(id));
+
+        if (filteredTracks.length === 0) {
+            return res.status(404).json({ error: 'No tracks found for the given volume.' });
+        }
+
+        res.json(filteredTracks);
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to read or parse tracks file.' });
+    }
 });
 
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
-
 
 app.use(express.json());
