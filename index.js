@@ -23,7 +23,6 @@ app.get('/tracks/:id/:lang', (req, res) => {
     const { id, lang } = req.params;
 
     try {
-        console.log(`Fetching tracks for volume: ${id}, language: ${lang}`);
         const tracksPath = path.join(__dirname, `data/${lang}tracks.json`);
         const tracks = JSON.parse(fs.readFileSync(tracksPath));
 

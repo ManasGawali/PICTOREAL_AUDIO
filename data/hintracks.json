@@ -1,20 +1,8 @@
-[    
+[
     {
-        "title": "Track 3",
-        "file": "audio1.mp3",
-        "image": "25th Volume Pictoreal_page-0003.jpg",
-        "volume": 27
-    },
-    {
-        "title": "Track 4",
-        "file": "audio2.mp3",
-        "image": "25th Volume Pictoreal_page-0004.jpg",
-        "volume": 27
-    },
-    {
-        "title": "Track 5",
-        "file": "audio3.mp3",
-        "image": "25th Volume Pictoreal_page-0005.jpg",
+        "title": "Abhijaat",
+        "file": "Abhijaat.mp3",
+        "image": "25th Volume Pictoreal_page-0001.jpg",
         "volume": 27
     }
 ]
