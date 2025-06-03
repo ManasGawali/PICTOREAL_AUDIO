@@ -1,7 +1,49 @@
 [
     {
-        "title": "Abhijaat",
-        "file": "Abhijaat.mp3",
+        "title": "आनंदवन",
+        "file": "आनंदवन.mp3",
+        "image": "25th Volume Pictoreal_page-0001.jpg",
+        "volume": 27
+    },
+    {
+        "title": "आप, हम और दो कप चाय",
+        "file": "आप, हम और दो कप चाय.mp3",
+        "image": "25th Volume Pictoreal_page-0001.jpg",
+        "volume": 27
+    },
+    {
+        "title": "घड़ी से पहले की घड़ियाँ",
+        "file": "घड़ी से पहले की घड़ियाँ.mp3",
+        "image": "25th Volume Pictoreal_page-0001.jpg",
+        "volume": 27
+    },
+    {
+        "title": "डॉ. एस. जयशंकर",
+        "file": "डॉ. एस. जयशंकर.mp3",
+        "image": "25th Volume Pictoreal_page-0001.jpg",
+        "volume": 27
+    },
+    {
+        "title": "नक्षत्र - तारों से तक़दीर तक ",
+        "file": "नक्षत्र - तारों से तक़दीर तक .mp3",
+        "image": "25th Volume Pictoreal_page-0001.jpg",
+        "volume": 27
+    },
+    {
+        "title": "मक़ामात-ए-ह़ुज़्न",
+        "file": "मक़ामात-ए-ह़ुज़्न.mp3",
+        "image": "25th Volume Pictoreal_page-0001.jpg",
+        "volume": 27
+    },
+    {
+        "title": "महाकुंभ २०२५ – मेरा आत्मिक अनुभव",
+        "file": "महाकुंभ २०२५ – मेरा आत्मिक अनुभव.mp3",
+        "image": "25th Volume Pictoreal_page-0001.jpg",
+        "volume": 27
+    },
+    {
+        "title": "वनतारा - वन्यजीव संरक्षण की क्रांति",
+        "file": "वनतारा - वन्यजीव संरक्षण की क्रांति.mp3",
         "image": "25th Volume Pictoreal_page-0001.jpg",
         "volume": 27
     }
